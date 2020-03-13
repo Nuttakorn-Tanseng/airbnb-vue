@@ -28,8 +28,11 @@
           class="mt-3"
         >
           <b-card-text>{{ list.summary.substring(0,50)+ "..." }}</b-card-text>
-
-          <b-button href="#" variant="primary">Go somewhere</b-button>
+          <router-link to=" name: 'detail', params: {id: list._id}}">
+          <b-button variant="primary">
+              View Details
+          </b-button>
+          </router-link>
         </b-card>
       </div>
       <!-- <div class="col">
